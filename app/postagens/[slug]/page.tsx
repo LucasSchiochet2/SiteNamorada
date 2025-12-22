@@ -27,7 +27,7 @@ export default async function PostInternal({ params }: Props) {
 
   return (
     <main className="flex flex-col min-h-screen mt-9 lg:mt-26 xl:mt-30">
-      <article className="flex-1 container mx-auto px-4 py-10 mt-20 flex flex-col gap-8 max-w-4xl">
+      <article className="flex-1 container mx-auto px-4 py-10 flex flex-col gap-8 max-w-4xl">
         {/* Breadcrumb / Voltar */}
         <div className="flex items-center gap-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-primary">Home</Link>

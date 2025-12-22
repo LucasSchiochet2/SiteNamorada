@@ -12,7 +12,7 @@ export default async function Hero() {
   const shouldShowButtons = banners.length > 1;
 
   return (
-    <section className="relative mt-18 lg:mt-46 xl:mt-48 w-full">
+    <section className="relative mt-11 lg:mt-46 xl:mt-48 w-full">
       <Carousel
         className="w-full h-full"
         opts={{

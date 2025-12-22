@@ -34,7 +34,7 @@ export default async function CategoryPage({
   const categoryTitle = "gramado".charAt(0).toUpperCase() + "gramado".slice(1);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 lg:mt-46 xl:mt-48 w-full">
+    <div className="max-w-6xl mx-auto px-4 mt-14 pb-6 lg:mt-46 xl:mt-48 w-full">
       {/* Breadcrumbs Dinâmico */}
       <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
         <Link href="/" className="hover:text-primary">

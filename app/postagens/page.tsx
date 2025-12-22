@@ -38,7 +38,7 @@ export default async function PostInternal(props: PageProps) {
   const lastPage = newsRes?.last_page || 1;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8 lg:mt-46 xl:mt-48 w-full">
+    <div className="max-w-6xl mx-auto px-4 mt-14 pb-6 lg:mt-46 xl:mt-48 w-full">
       <div className="flex items-center gap-2 text-sm text-gray-500">
         <Link href="/" className="hover:text-primary">Home</Link>
         <span>/</span>
