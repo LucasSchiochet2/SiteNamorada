@@ -42,7 +42,7 @@ export default function HeaderMobileButtons() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen, searchOpen]);
 
-  const dropdownTop = "top-16 lg:top-24";
+  const dropdownTop = "top-14 lg:top-24";
 
   return (
     <div className="flex gap-4 xl:hidden">
