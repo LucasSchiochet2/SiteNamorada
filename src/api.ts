@@ -33,7 +33,7 @@ export async function getPostList({
         slug: post.id.toString(),
         image: {
           crop: post.photo
-            ? `http://${base}/${post.photo}`
+            ? `${base}/${post.photo}`
             : "https://placehold.co/600x400?text=Sem+Imagem",
         },
       })
