@@ -1,5 +1,5 @@
 const baseUrl = "http://adminsitenamorada-production.up.railway.app/api/"
-const base = "adminsitenamorada-production.up.railway.app"
+const base = "https://pub-c0dd59cbbea14ed6b29d843d2ef5994b.r2.dev"
 export async function getPostList({
   page,
   perPage,
@@ -33,7 +33,7 @@ export async function getPostList({
         slug: post.id.toString(),
         image: {
           crop: post.photo
-            ? `http://${base}/private-image/${post.photo}`
+            ? `http://${base}/${post.photo}`
             : "https://placehold.co/600x400?text=Sem+Imagem",
         },
       })
@@ -99,7 +99,7 @@ export async function getPostByCategory({
         slug: post.slug ?? post.id.toString(),
         image: {
           crop: post.photo
-            ? `http://${base}/private-image/${post.photo}`
+            ? `http://${base}/${post.photo}`
             : "https://placehold.co/600x400?text=Sem+Imagem",
         },
       })
@@ -140,7 +140,7 @@ export async function getPost(slug: string) {
       ...post,
       category: "Notícias",
       image: post.photo
-        ? `http://${base}/private-image/${post.photo}`
+        ? `http://${base}/${post.photo}`
         : "https://placehold.co/1200x600?text=Sem+Imagem",
       published_at_formatted: new Date(post.created_at).toLocaleDateString(
         "pt-BR",
