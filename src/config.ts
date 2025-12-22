@@ -73,6 +73,6 @@ export const MENUHEADER = [
   },
   {
     title: "Gerenciador",
-    href: "/gerenciador",
+    href: "https://adminsitenamorada-production.up.railway.app",
   },
 ];
