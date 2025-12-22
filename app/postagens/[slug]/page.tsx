@@ -1,6 +1,6 @@
 import { getPost } from "@/src/api";
 import Link from "next/link";
-
+import BackButton from "@/components/BackButton";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -36,6 +36,9 @@ export default async function PostInternal({ params }: Props) {
           <span>/</span>
           <span className="text-primary font-medium truncate">{post.title}</span>
         </div>
+        
+        
+          <BackButton />
 
         {/* Cabeçalho do Post */}
         <div className="flex flex-col gap-4">
@@ -65,16 +68,6 @@ export default async function PostInternal({ params }: Props) {
         {/* Conteúdo do Post */}
         <div className="prose prose-lg max-w-none text-dark-secondary">
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        </div>
-
-        {/* Botão Voltar */}
-        <div className="border-t border-gray-200 pt-8 mt-8 mb-10">
-          <Link 
-            href="/postagens" 
-            className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
-          >
-            ← Voltar para todas as postagens
-          </Link>
         </div>
       </article>
     </main>

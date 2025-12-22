@@ -1,4 +1,6 @@
-const baseUrl = "https://adminsitenamorada-production.up.railway.app/api/"
+import { env } from "process";
+
+const baseUrl = env.API_URL; 
 const base = "https://pub-c0dd59cbbea14ed6b29d843d2ef5994b.r2.dev"
 export async function getPostList({
   page,
