@@ -99,7 +99,7 @@ export async function getPostByCategory({
         slug: post.slug ?? post.id.toString(),
         image: {
           crop: post.photo
-            ? `http://${base}/${post.photo}`
+            ? `${base}/${post.photo}`
             : "https://placehold.co/600x400?text=Sem+Imagem",
         },
       })
@@ -140,7 +140,7 @@ export async function getPost(slug: string) {
       ...post,
       category: "Notícias",
       image: post.photo
-        ? `http://${base}/${post.photo}`
+        ? `${base}/${post.photo}`
         : "https://placehold.co/1200x600?text=Sem+Imagem",
       published_at_formatted: new Date(post.created_at).toLocaleDateString(
         "pt-BR",
