@@ -73,6 +73,6 @@ export const MENUHEADER = [
   },
   {
     title: "Gerenciador",
-    href: "https://adminsitenamorada-production.up.railway.app",
+    href: "https://intranet.anaelucas.com.br",
   },
 ];

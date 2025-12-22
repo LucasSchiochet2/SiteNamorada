@@ -41,7 +41,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://adminsitenamorada-production.up.railway.app" className="hover:text-primary transition-colors">
+              <Link href="https://intranet.anaelucas.com.br" className="hover:text-primary transition-colors">
                 Gerenciador
               </Link>
             </li>
