@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ICardNews} from "./interface";
+import Image from "next/image";
 export function CardNews({
   category,
   title,
@@ -12,7 +13,7 @@ export function CardNews({
     // Adicionado 'block' aqui. Links são inline por padrão e podem quebrar o layout de largura/altura
     <Link className="group w-full block" href={link}>
       <div className="relative w-full">
-        <img
+        <Image
           // Removido 'h-full'. O aspect-[1.4] cuidará da altura automaticamente.
           className="w-full object-cover aspect-[1.4]"
           src={image}
