@@ -18,6 +18,8 @@ export function CardNews({
           className="w-full object-cover aspect-[1.4]"
           src={image}
           alt={title}
+          width={700}
+          height={500}
         />
         <div className="absolute bottom-0 left-0 w-full h-fit">
           {/* Ajustado o gradiente e posicionamento para garantir que cubra a imagem corretamente */}
